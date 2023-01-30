@@ -1,22 +1,24 @@
-<div class="container">
 
-    <mat-card class="card">
-        <mat-card-title>Login</mat-card-title><br>
-        <mat-card-content>
-            <form [formGroup]="loginForm">
-                <mat-form-field appearance="fill">
-                    <mat-label>Email</mat-label>
-                    <input matInput placeholder="Email">
-                </mat-form-field>
-
-                <mat-form-field appearance="fill">
-                    <mat-label>Password</mat-label>
-                    <input matInput placeholder="Password">
-                </mat-form-field>
-            </form>
-            <div class="buttion">
-                <button mat-raised-button color="warn">Login</button>
-            </div>
-        </mat-card-content>
-    </mat-card>
+<div>
+    <div class="container">
+        <mat-card class="card">
+            <mat-card-title>Login</mat-card-title><br>
+            <mat-card-content>
+                <form [formGroup]="loginForm">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password">
+                    </mat-form-field>
+                </form>
+                <div class="buttion">
+                    <button mat-raised-button color="warn">Login</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>
