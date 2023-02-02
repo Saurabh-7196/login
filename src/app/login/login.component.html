@@ -1,4 +1,4 @@
-<div>
+<div class="back">
     <div class="container">
         <mat-card class="card">
             <mat-card-title>Welcome</mat-card-title><br>
@@ -14,14 +14,13 @@
 
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
-                        <input type="password" matInput placeholder="Password" formControlName="password">
+                        <input type="text" matInput placeholder="Password" formControlName="password">
                         <mat-error *ngIf="AllControls?.password?.errors?.['required']&&'submitted'">Required</mat-error>
                     </mat-form-field>
                     <div class="buttion">
                         <button mat-raised-button color="warn">Login</button>
                     </div>
                 </form>
-
             </mat-card-content>
         </mat-card>
     </div>

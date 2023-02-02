@@ -1,24 +1,45 @@
-
-a{
-    color: rgb(83, 17, 17);
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: large;
 }
-a:hover{
-    color: rgb(139, 4, 22);
+
+a:hover {
+    color: rgb(175, 171, 171);
     border-radius: 5px;
 }
-a.logo{
+img:hover{
+    text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+a.logo {
     padding: 1em;
     font-weight: bold;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0;
     float: left;
     padding-right: 20px;
 }
-nav{
+
+nav {
     text-align: center;
     height: 90px;
+    background-color: #1976d2;
 }
+
+.color img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    }
+    
+    .color img:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    }

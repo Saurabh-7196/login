@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetapiService {
-  private url = 'https://jsonplaceholder.typicode.com/posts'
+  private url = 'https://retoolapi.dev/tk9r2Z/r'
   constructor(private api: HttpClient) { }
   getapi() {
     return this.api.get<any>(this.url)

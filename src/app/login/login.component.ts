@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { Validators } from '@angular/forms';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { GetapiService } from '../getapi.service';
 
 @Component({
   selector: 'app-login',
@@ -11,52 +12,43 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
   submitted = false;
+  result: any;
 
-  constructor(private fd: FormBuilder, public route: Router) {
+  constructor(public route: Router, private api: GetapiService) {
+  }
+
+  ngOnInit() {
+    this.api.getapi().subscribe((res) => {
+      this.result = res;
+      console.log(this.result)
+    })
   }
 
   loginForm = new FormGroup({
-    email: new FormControl('saurabh@gmail.com', [Validators.required, Validators.email]),
+    email: new FormControl('gcullrfordm@myspace.com', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   })
-
   get AllControls() {
     return this.loginForm.controls;
   }
 
   onSubmit() {
-
-    this.submitted = true;
-    // console.log(this.loginForm.get('email')?.value)
-    // console.log(this.loginForm.get('password')?.value)
-
-    // console.log(this.loginForm.value.email)
-    // console.log(this.loginForm.value.password)
     let e = this.AllControls.email.value;
     let p = this.AllControls.password.value;
+    this.submitted = true;
 
-    // console.log(this.AllControls.email.value)
-    // console.log(this.AllControls.password.value)
-    console.log(e);
-    console.log(p);
-
-
-    if (!this.auth(e, p)) {
-      return alert("Invalid email or password");
-    }
-    else {
-      this.route.navigate(['admin-dash']);
-
-    }
-  }
-  auth(e: any, p: any) {
-    if ((e == 'saurabh@gmail.com') && (p == '123')) {
-      console.log('true')
-      return true;
-    }
-    else {
-      console.log('fasle')
-      return false;
+    for (var val in this.result) {
+      if (e == this.result[val]['email']) {
+        console.log("email ok")
+        if (p == this.result[val]['password']) {
+          console.log("pass ok");
+          this.route.navigate(['admin-dash']);
+          return alert("success")
+        }
+        else {
+          return alert("Invalid password");
+        }
+      }
     }
   }
 }

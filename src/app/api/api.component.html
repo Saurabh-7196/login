@@ -1,21 +1,22 @@
 <div class="container-fluid "> <br>
     <div class="card" style="padding: 20px;">
-        <p>Data from : <a href="https://jsonplaceholder.typicode.com/posts">API URL</a></p>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>UserId</th>
-                <th>ID</th>
-                <th>Title</th>
-            </tr>
-        </thead>
-        <tbody *ngFor="let val of details">
-            <tr *ngIf="val.id<31">
-                <td>{{val.userId}}</td>
-                <td>{{val.id}}</td>
-                <td>{{val.title}}</td>
-            </tr>
-        </tbody>
-    </table>
+        <p>API data : <a href="https://retoolapi.dev/tk9r2Z/r">API URL</a></p>
+        <p>API site : <a href="https://retool.com/api-generator/">Site</a></p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let val of details">
+                <tr>
+                    <td>{{val.id}}</td>
+                    <td>{{val.email}}</td>
+                    <td>{{val.password}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
