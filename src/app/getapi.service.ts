@@ -10,4 +10,7 @@ export class GetapiService {
   getapi() {
     return this.api.get<any>(this.url)
   }
+  postuser(values:any){
+    return this.api.post<any>('https://retoolapi.dev/tk9r2Z/r',values)
+  }
 }

@@ -1,1 +1,12 @@
-<p>about works!</p>
+<br>
+<div class="container-fluid" >
+    <form #post="ngForm" (ngSubmit)="postapi(post.value)">
+        <div class="card">
+            <input  class="form-control" ngModel name="id" type="number" placeholder="ID"><br>
+            <input  class="form-control" ngModel name="email" type="email" placeholder="Email"><br>
+            <input  class="form-control" ngModel name="password" type="text"
+                placeholder="Password"><br>
+            <button style="width: 100px;" mat-raised-button color="warn">Submitt</button>
+        </div>
+    </form>
+</div>

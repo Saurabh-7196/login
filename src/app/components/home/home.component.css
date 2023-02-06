@@ -1,0 +1,45 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5em;
+    margin-top: 30px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 2.0rem;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 17px;
+    color: #444;
+    margin: 1em 0;
+}
+.home{
+    padding: 30px;
+}
+.main{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #DBDBDB;
+}
+li{
+    line-height: 2.0rem;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 17px;
+    color: #444;
+    margin: 1em 0;
+}

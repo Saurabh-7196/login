@@ -5,12 +5,10 @@ a {
 }
 
 a:hover {
-    color: rgb(175, 171, 171);
-    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 1);
 }
-img:hover{
-    text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+
 
 a.logo {
     padding: 1em;
@@ -21,25 +19,28 @@ nav ul li {
     list-style: none;
     margin: 0;
     float: left;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 nav {
     text-align: center;
     height: 90px;
     background-color: #1976d2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
-
-.color img{
+img{
+    padding-left: 25px;
+}
+.color img {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -webkit-transition: all 1s ease;
-    }
-    
-    .color img:hover{
+}
+
+.color img:hover {
     filter: grayscale(0%);
     filter: gray;
     -webkit-filter: grayscale(0%);
     filter: none;
     transition: 1s ease;
-    }
+}

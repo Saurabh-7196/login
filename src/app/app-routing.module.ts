@@ -4,6 +4,7 @@ import { ApiComponent } from './api/api.component';
 import { AboutComponent } from './components/about/about.component';
 import { AdminDashComponent } from './components/admin-dash/admin-dash.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
     {path:'apicall',component:ApiComponent},
     {path:'contact',component:ContactComponent},
     {path:'about',component:AboutComponent},
+    {path:'home',component:HomeComponent}
   ]},
   {path:'**',component:PageNotFoundComponent}//if worng url is there then show this one
 ];

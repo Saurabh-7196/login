@@ -42,7 +42,7 @@ export class LoginComponent {
         console.log("email ok")
         if (p == this.result[val]['password']) {
           console.log("pass ok");
-          this.route.navigate(['admin-dash']);
+          this.route.navigate(['admin-dash/home']);
           return alert("success")
         }
         else {
