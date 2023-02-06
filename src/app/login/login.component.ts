@@ -11,7 +11,7 @@ import { GetapiService } from '../getapi.service';
 })
 export class LoginComponent {
 
-  submitted = false;
+  submitted: boolean = false;
   result: any;
 
   constructor(public route: Router, private api: GetapiService) {
@@ -33,8 +33,8 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    let e = this.AllControls.email.value;
-    let p = this.AllControls.password.value;
+    var e = this.AllControls.email.value;
+    var p = this.AllControls.password.value;
     this.submitted = true;
 
     for (var val in this.result) {
