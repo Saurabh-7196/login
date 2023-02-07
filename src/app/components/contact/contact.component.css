@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    height: 700px;
+}
+.left{
+    width: 50%;
+    background-image: url('https://img.freepik.com/free-vector/man-having-online-job-interview_52683-43379.jpg?w=996&t=st=1675746677~exp=1675747277~hmac=047f44f729ccb2ff3733a84294a23574cbbb5e58c8f474a5a6e8f3f4e6a96369');
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+    padding-left: 50px;
+    justify-content: center;
+    
+}
+.right{
+    width: 50%;
+    /* background-color: aliceblue; */
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container{
+    padding: 30px;
+    max-width: 500px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 3.0rem;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 17px;
+    color: #756c6c;
+    margin: 1em 0;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}

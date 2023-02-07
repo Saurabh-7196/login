@@ -1,27 +1,38 @@
-.container{
+.container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*the nor flex dir L-R then make that inti T-B*/
     justify-content: center;
     align-items: center;
 
     position: relative;
     top: 10rem;
 }
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
-.card{
+
+.card {
     padding: 10px;
     padding-top: 30px;
-    align-items:center ;
+    align-items: center;
     width: 400px;
     border-radius: 10px;
 }
-mat-form-field{
+
+mat-form-field {
     width: 350px;
 }
-mat-card-title{
+
+mat-card-title {
     font-size: xx-large;
 }
-.buttion{
-text-align: center;}
+
+.buttion {
+    text-align: center;
+}
+.back{
+    background-image: url('https://images.unsplash.com/photo-1615715757401-f30e7b27b912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

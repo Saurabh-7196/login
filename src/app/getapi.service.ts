@@ -5,12 +5,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetapiService {
-  private url = 'https://retoolapi.dev/tk9r2Z/r'
+  private url = 'https://retoolapi.dev/Ev20G1/data'
   constructor(private api: HttpClient) { }
   getapi() {
     return this.api.get<any>(this.url)
   }
   postuser(values:any){
-    return this.api.post<any>('https://retoolapi.dev/tk9r2Z/r',values)
+    return this.api.post<any>('https://retoolapi.dev/Ev20G1/data',values)
   }
 }

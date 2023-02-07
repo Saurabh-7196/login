@@ -25,7 +25,7 @@ export class LoginComponent {
   }
 
   loginForm = new FormGroup({
-    email: new FormControl('gcullrfordm@myspace.com', [Validators.required, Validators.email]),
+    email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   })
   get AllControls() {
@@ -42,6 +42,7 @@ export class LoginComponent {
         console.log("email ok")
         if (p == this.result[val]['password']) {
           console.log("pass ok");
+          // this.save();
           this.route.navigate(['admin-dash/home']);
           return alert("success")
         }
@@ -49,8 +50,19 @@ export class LoginComponent {
           return alert("Invalid password");
         }
       }
+      // else {
+      //   console.log(e)
+      //   console.log(this.result[val]['email'])
+      //   return alert("invalid email")
+      // }
     }
+    return alert("Invalid email or password")
   }
+  // save(){
+  //   let d=this.result['email']
+  //   // console.log(d)
+  //   sessionStorage.setItem('email',d.value);
+  // }
 }
 
 

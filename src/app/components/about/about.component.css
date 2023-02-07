@@ -1,4 +1,15 @@
 .card{
     padding: 20px;
     width: 500px;
+    border-radius: 10px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.data{
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 100px;
 }
